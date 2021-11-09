@@ -13,7 +13,7 @@ function sayHello() {
 // Calling function
 sayHello(); // Outputs: Hello World!
 
-function checkAge(name, age) {
+function checkAge(name: string, age: number) {
     // your code here
     if (age < 21) {
         alert("Sorry " + name + ", you aren't old enough to view this page!");
@@ -70,9 +70,6 @@ for (let i = 0; i < myFavoriteVegetables.length; i++) {
         checkAge(friends[i].name, friends[i].age);
     }
     //step 15: getLength function
-    function getLength(string) {
-        return string.length;
-    }
     //step 16: call function
     let length = getLength("Hello World");
     //step 17: check odd/even on length
@@ -82,3 +79,7 @@ for (let i = 0; i < myFavoriteVegetables.length; i++) {
         console.log("The world is an odd place!");
     
     } }
+
+function getLength(arg0: string) {
+    throw new Error("Function not implemented.");
+}

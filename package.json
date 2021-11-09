@@ -1,0 +1,23 @@
+{
+  "name": "ts-updated-typsecript-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zomievey/typescript_lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zomievey/typescript_lab/issues"
+  },
+  "homepage": "https://github.com/Zomievey/typescript_lab#readme",
+  "dependencies": {
+    "typescript": "^4.4.4"
+  }
+}

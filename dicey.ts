@@ -1,10 +1,13 @@
-let dice = [];
+let dice: this[] | { value: number; }[] = [];
 let btnGenerate = $("#btn-generate");
 let btnRoll = $("#btn-roll");
 let btnSum = $("#btn-sum");
 let removeAllButton = $("#removeAll")
 
 class Die {
+    div: any;
+    value: number | undefined;
+    char: string | undefined;
     constructor() {
         this.div = $("<img></img>");
         this.roll();
@@ -52,7 +55,7 @@ $(()=>{
             buttons: true,
             dangerMode: true,
           })
-          .then((willDelete) => {
+          .then((willDelete: any) => {
             if (willDelete) {
                 dice = [];
                 $("#dice-container").html("");
@@ -81,3 +84,7 @@ $(()=>{
         swal(`The sum of the values of all dice on the screen is ${sum}.`)
     });
 })
+
+function swal(arg0: { title: string; text: string; icon: string; buttons: boolean; dangerMode: boolean; }) {
+    throw new Error("Function not implemented.");
+}

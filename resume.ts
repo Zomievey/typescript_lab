@@ -13,12 +13,17 @@ console.log("*Paiting");
 console.log("");
 
 console.log("My Preious Experience");
-displayPosition("Innovate Birmingham", "Full Stack Engineer");
-displayPosition("text", "text", "text");
 
-function displayPosition(companyNAme, jobTitle, description) {
-    console.log(jobTitle + " at " + companyName + " - " + description);
+let companyName = "Innovate Birmingham";
+let jobTitle = "Full Stack Engineer";
+let description = "this is a job description text";
+
+function displayPosition(companyName, jobTitle, description){
+   return (jobTitle + " at " + companyName + " - " + description);
 }
+
+
+displayPosition(companyName, jobTitle, description);
 
 function displaySkill(skillName, isCool) {
     if (isCool == true) {
@@ -28,5 +33,6 @@ function displaySkill(skillName, isCool) {
     }
 }
 
-displaySkill()
+
+
  
